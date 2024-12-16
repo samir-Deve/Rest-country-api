@@ -1,0 +1,17 @@
+.creator-container {
+	padding-inline: 2em;
+	margin-top: 2em;
+}
+
+.creator-container.Dark {
+	color: white;
+}
+
+.creator-container.Light {
+	color: hsl(207, 26%, 17%)
+}
+
+.creator-container a {
+	text-decoration: none;
+	color: inherit;
+}

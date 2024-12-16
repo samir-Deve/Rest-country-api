@@ -1,0 +1,37 @@
+.countryC-container {
+	display: flex;
+	flex-direction: column;
+	max-height: 22em;
+	max-width: fit-content;
+	border-radius: 0.5em;
+	overflow: hidden;
+	box-shadow: 0em 0em 0.1em hsl(0, 0%, 52%);
+	padding-bottom: 1em;
+}
+
+.countryC-container.Dark {
+	background-color:  hsl(209, 23%, 22%);
+	color: white;
+}
+
+.countryC-container.Light {
+	background-color:  white;
+	color: hsl(207, 26%, 17%);
+}
+
+.countryC-container img {
+	height: 10em;
+	width: 16em;
+}
+
+.country-info {
+	padding-inline: 2em;
+	flex: 1;
+}
+
+/* Mobile size */ 
+@media (max-width: 53.125em) {
+	.countryC-container {
+		margin: 0em auto;
+	}
+}

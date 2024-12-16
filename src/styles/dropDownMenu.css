@@ -1,0 +1,74 @@
+.M-container {
+	border-radius: 0.5em;
+	width: 15em;
+	position: relative;
+	box-shadow: 0em 0em 0.1em hsl(0, 0%, 52%);
+}
+
+.M-container.Dark {
+	background-color: hsl(209, 23%, 22%);
+	color: white;
+}
+
+.M-container.Light {
+	background-color:hsl(0, 0%, 100%);
+	color: hsl(207, 26%, 17%);
+} 
+
+
+.M-container .F-btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1em;
+	padding-inline: 1em;
+	cursor: pointer;
+	height: 3em;
+}
+
+.M-container .F-btn.toggle i{
+	transform: rotate(180deg);
+}
+
+.M-container.Dark .menue {
+	background-color: hsl(209, 23%, 22%);
+	color: white;
+}
+
+.M-container.Light .menue {
+	background-color:hsl(0, 0%, 100%);
+
+	color: hsl(207, 26%, 17%);
+}
+
+
+.M-container .menue {
+	position: absolute;
+	width: 100%;
+	padding: 0em;
+	height: 0;
+	overflow: hidden;
+
+	transition: height 0.5s ease-in-out;
+
+	border-radius: 0.5em;
+
+	top: 3.5em;
+	box-shadow: 0em 0em 0.1em hsl(0, 0%, 52%);
+}
+
+.M-container .menue.show {
+	height: 12.5em;
+}
+
+.M-container .menue li {
+	padding-inline: 1em;
+	padding-block: 0.5em;
+	cursor: pointer;
+	border: 0.1em solid transparent;
+	border-radius: 0.5em;
+}
+
+.M-container .menue li:hover {
+	border: 1px solid hsl(0, 0%, 52%);
+}

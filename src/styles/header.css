@@ -1,0 +1,54 @@
+.H-container {
+	display: flex;
+	justify-content: space-between;
+	padding-inline: 2em;
+	margin-bottom: 3em;
+	height: 4em;
+	align-items: center;
+}
+
+.H-container.Dark {
+	background-color: hsl(209, 23%, 22%);
+	color: white;
+}
+
+.H-container.Light {
+	background-color: white;
+	color: hsl(207, 26%, 17%);
+}
+
+.H-container .Bg-color-btn {
+	display: flex;
+	background-color: transparent;
+	align-items: center;
+	gap: 1em;
+	font-size: 1.2em;
+	border: none;
+	cursor: pointer;
+}
+
+
+.H-container.Dark .Bg-color-btn i {
+	color: white;
+}
+
+.H-container.Dark .Bg-color-btn p {
+	color: white;
+}
+
+/* Mobile size Styles */
+
+@media (max-width: 53.125em) {
+	.H-container {
+		padding-inline: 1em;
+	}
+	.H-container .H-text {
+		font-size: 1em;
+	}
+
+	.H-container .Bg-color-btn {
+		font-size: 1em;
+		gap: 0.5em;
+	}
+
+}
